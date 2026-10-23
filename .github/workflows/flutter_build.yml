@@ -41,11 +41,11 @@ jobs:
 
       - name: Build APK (prod)
         if: github.event_name == 'workflow_dispatch'
-        run: flutter build apk --release --flavor prod
+        run: flutter build apk --release --flavor prod --dart-define=APP_NAME=TxTdiff
 
       - name: Build APK (coexist)
         if: github.event_name == 'workflow_dispatch'
-        run: flutter build apk --release --flavor coexist
+        run: flutter build apk --release --flavor coexist --dart-define=APP_NAME=TXTcompare
 
       - name: Upload prod APK
         if: github.event_name == 'workflow_dispatch'
