@@ -15,8 +15,10 @@ class DocDiffApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final skin = ref.watch(skinProvider);
 
+    const appTitle = String.fromEnvironment('APP_NAME', defaultValue: 'DocDiff');
+
     return MaterialApp(
-      title: 'DocDiff',
+      title: appTitle,
       debugShowCheckedModeBanner: false,
       theme: lightThemeOf(skin),
       darkTheme: darkThemeOf(skin),
