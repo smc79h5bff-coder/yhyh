@@ -23,22 +23,22 @@ class AppColors {
       Theme.of(c).brightness == Brightness.dark ? modifiedDark : modifiedLight;
 
   // ---------------------------------------------------------------
-  // 浅色主题：主色是灰紫，其余全部纯灰（R=G=B）
+  // 浅色主题：主色是图标蓝，其余全部纯灰（R=G=B）
   // ---------------------------------------------------------------
   static const ColorScheme lightScheme = ColorScheme(
     brightness: Brightness.light,
 
     // —— 主色（按钮、选中态用它）——
-    primary: Color(0xFF6B5A7E),
+    primary: Color(0xFF2563EB),
     onPrimary: Color(0xFFFFFFFF),
-    primaryContainer: Color(0xFFEDE5F4),
-    onPrimaryContainer: Color(0xFF2A2138),
+    primaryContainer: Color(0xFFE9F1FE),
+    onPrimaryContainer: Color(0xFF16315A),
 
     // —— 次要色：同色系更灰一点 ——
-    secondary: Color(0xFF7A7285),
+    secondary: Color(0xFF6B7A90),
     onSecondary: Color(0xFFFFFFFF),
-    secondaryContainer: Color(0xFFE8E4ED),
-    onSecondaryContainer: Color(0xFF25222B),
+    secondaryContainer: Color(0xFFE6EBF2),
+    onSecondaryContainer: Color(0xFF23272E),
 
     tertiary: Color(0xFF616161),
     onTertiary: Color(0xFFFFFFFF),
@@ -56,7 +56,7 @@ class AppColors {
     surfaceDim: Color(0xFFE0E0E0),
     surfaceBright: Color(0xFFFAFAFA),
     surfaceContainerLowest: Color(0xFFFFFFFF),
-    surfaceContainerLow: Color(0xFFF7F5FA),
+    surfaceContainerLow: Color(0xFFF7F7F8),
     surfaceContainer: Color(0xFFEEEEEE),
     surfaceContainerHigh: Color(0xFFE8E8E8),
     surfaceContainerHighest: Color(0xFFE0E0E0),
@@ -70,28 +70,28 @@ class AppColors {
 
     inverseSurface: Color(0xFF303030),
     onInverseSurface: Color(0xFFF5F5F5),
-    inversePrimary: Color(0xFFD5C4E8),
+    inversePrimary: Color(0xFFA9C7FF),
 
     shadow: Color(0xFF000000),
     scrim: Color(0xFF000000),
   );
 
   // ---------------------------------------------------------------
-  // 夜间主题：主色是浅灰紫，其余纯灰
+  // 夜间主题：主色是浅蓝，其余纯灰
   // ---------------------------------------------------------------
   static const ColorScheme darkScheme = ColorScheme(
     brightness: Brightness.dark,
 
     // —— 主色 ——
-    primary: Color(0xFFCBB9DD),
-    onPrimary: Color(0xFF352A44),
-    primaryContainer: Color(0xFF4A3D5C),
-    onPrimaryContainer: Color(0xFFE9DEF5),
+    primary: Color(0xFF9CC0FF),
+    onPrimary: Color(0xFF0B2A55),
+    primaryContainer: Color(0xFF1B3A5F),
+    onPrimaryContainer: Color(0xFFDDE9FF),
 
-    secondary: Color(0xFFB0A6BC),
-    onSecondary: Color(0xFF2B2733),
-    secondaryContainer: Color(0xFF423C4C),
-    onSecondaryContainer: Color(0xFFE5DFEA),
+    secondary: Color(0xFFA9B8CE),
+    onSecondary: Color(0xFF1B2430),
+    secondaryContainer: Color(0xFF2A3444),
+    onSecondaryContainer: Color(0xFFDEE5EE),
 
     tertiary: Color(0xFFBDBDBD),
     onTertiary: Color(0xFF1C1C1C),
@@ -109,7 +109,7 @@ class AppColors {
     surfaceDim: Color(0xFF121212),
     surfaceBright: Color(0xFF424242),
     surfaceContainerLowest: Color(0xFF0A0A0A),
-    surfaceContainerLow: Color(0xFF1C1A22),
+    surfaceContainerLow: Color(0xFF1A1C1F),
     surfaceContainer: Color(0xFF1E1E1E),
     surfaceContainerHigh: Color(0xFF262626),
     surfaceContainerHighest: Color(0xFF303030),
@@ -122,7 +122,7 @@ class AppColors {
 
     inverseSurface: Color(0xFFE0E0E0),
     onInverseSurface: Color(0xFF1C1C1C),
-    inversePrimary: Color(0xFF6B5A7E),
+    inversePrimary: Color(0xFF2563EB),
 
     shadow: Color(0xFF000000),
     scrim: Color(0xFF000000),
